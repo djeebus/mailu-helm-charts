@@ -444,6 +444,7 @@ roundcube:
     claimNameOverride: ""
     #annotations:
     #  "helm.sh/resource-policy": keep
+  plugins: []
   uri: /roundcube
   resources:
     requests:
