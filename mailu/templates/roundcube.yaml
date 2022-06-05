@@ -75,7 +75,7 @@ spec:
             value: "/admin/"
           {{- if .Values.roundcube.plugins }}
           - name: ROUNDCUBE_PLUGINS
-            value: "{{ .Values.roundcube.plugins | join ',' }}"
+            value: "{{ .Values.roundcube.plugins | join "," }}"
           {{- end }}
           {{- if eq .Values.database.roundcubeType "sqlite" }}
           - name: ROUNDCUBE_DB_FLAVOR
